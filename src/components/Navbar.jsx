@@ -72,13 +72,7 @@ function Navbar() {
             </Link>
             {isAuthenticated && (
               <>
-                <Link
-                  to="/Home"
-                  className="block px-3 py-2 text-gray-700 hover:text-primary md:rounded-md"
-                  onClick={() => setIsMenuOpen(false)} // Ferme le menu après clic
-                >
-                  Réserver un espace
-                </Link>
+               
                 <Link
                   to="/reservations"
                   className="block px-3 py-2 text-gray-700 hover:text-primary md:rounded-md"

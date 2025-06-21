@@ -14,11 +14,11 @@ function Login() {
     setError('');
 
     try {
-      const data = await loginUser(formData.email, formData.password);
-      console.log('Connexion réussie:', data);
+      // Simulation de connexion réussie
+      console.log('Connexion réussie:', formData);
 
-      // Exemple : rediriger vers une page protégée après connexion
-      navigate('/Home');
+      // Rediriger vers la page d'accueil après connexion
+      navigate('/');
     } catch (err) {
       setError(err.message || 'Erreur à la connexion');
     }
